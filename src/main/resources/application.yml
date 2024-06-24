@@ -1,0 +1,18 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+server:
+  port: 4500
+customVar:
+  welcomeMsg: Hello from Test
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+server:
+  port: 7000
+customVar:
+  welcomeMsg: Hello from prod
